@@ -40,17 +40,25 @@ void main() async {
 }
 
 class SmartFarmingApp extends StatelessWidget {
-  const SmartFarmingApp({Key? key}) : super(key: key);
+  final SettingsProvider settingsProvider;
+  final AuthProvider authProvider;
+
+  const SmartFarmingApp({
+    Key? key,
+    required this.settingsProvider,
+    required this.authProvider,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => SettingsProvider()),
-        ChangeNotifierProvider(create: (_) => AuthProvider()),
+        ChangeNotifierProvider.value(value: settingsProvider),
+        ChangeNotifierProvider.value(value: authProvider),
         ChangeNotifierProvider(create: (_) => DeviceProvider()),
         ChangeNotifierProvider(create: (_) => SensorProvider()),
         ChangeNotifierProvider(create: (_) => NotificationProvider()),
+        ChangeNotifierProvider(create: (_) => SyncService()),
       ],
       child: Consumer<SettingsProvider>(
         builder: (context, settingsProvider, _) {
