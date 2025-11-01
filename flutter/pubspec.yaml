@@ -1,0 +1,79 @@
+name: smart_farming_assist
+description: AI Smart Farming Assist - IoT irrigation management app for farmers
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP & Networking
+  http: ^1.1.0
+  websockets: ^0.0.2
+  dio: ^5.3.0
+
+  # State Management
+  provider: ^6.0.0
+  get_it: ^7.6.0
+
+  # Local Storage
+  sqflite: ^2.3.0
+  path_provider: ^2.1.0
+  shared_preferences: ^2.2.0
+
+  # Authentication
+  flutter_secure_storage: ^9.0.0
+
+  # UI & Design
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.0
+  intl: ^0.19.0
+
+  # Localization (Multi-language)
+  flutter_localizations:
+    sdk: flutter
+  intl_translation: ^0.18.0
+
+  # Notifications
+  flutter_local_notifications: ^16.0.0
+  firebase_messaging: ^14.6.0
+  firebase_core: ^2.24.0
+
+  # Real-time Updates
+  connectivity_plus: ^5.0.0
+
+  # DateTime
+  timezone: ^0.9.0
+
+  # Logging
+  logger: ^2.0.0
+
+  # Charts/Graphs
+  fl_chart: ^0.65.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+
+  # Fonts
+  fonts:
+    - family: GoogleSans
+      fonts:
+        - asset: assets/fonts/GoogleSans-Regular.ttf
+        - asset: assets/fonts/GoogleSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/GoogleSans-Medium.ttf
+          weight: 500
