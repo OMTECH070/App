@@ -8,6 +8,7 @@ import 'providers/settings_provider.dart';
 import 'providers/device_provider.dart';
 import 'providers/sensor_provider.dart';
 import 'providers/notification_provider.dart';
+import 'services/sync_service.dart';
 import 'screens/auth/login_screen.dart';
 import 'screens/auth/register_screen.dart';
 import 'screens/dashboard_screen.dart';
@@ -24,7 +25,18 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const SmartFarmingApp());
+  // Initialize Settings Provider
+  final settingsProvider = SettingsProvider();
+  await settingsProvider.initialize();
+
+  // Initialize Auth Provider
+  final authProvider = AuthProvider();
+  await authProvider.initialize();
+
+  runApp(SmartFarmingApp(
+    settingsProvider: settingsProvider,
+    authProvider: authProvider,
+  ));
 }
 
 class SmartFarmingApp extends StatelessWidget {
