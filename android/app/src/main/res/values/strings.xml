@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Study Planner</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_subjects">Subjects</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Auth -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+
+    <!-- Home -->
+    <string name="today_progress">Today\'s Progress</string>
+    <string name="sessions_completed">%d/%d sessions completed</string>
+    <string name="study_streak">Study Streak</string>
+    <string name="day_streak">%d days</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="start_study">Start Study</string>
+    <string name="add_task">Add Task</string>
+    <string name="view_stats">View Stats</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="todays_schedule">Today\'s Schedule</string>
+    <string name="no_sessions_planned">No study sessions planned</string>
+    <string name="add_first_session">Add your first study session to get started</string>
+    <string name="plan_your_day">Plan Your Day</string>
+    <string name="ai_insights">AI Insights</string>
+    <string name="daily_motivation">Daily Motivation</string>
+
+    <!-- Study Sessions -->
+    <string name="add_study_session">Add Study Session</string>
+    <string name="subject">Subject</string>
+    <string name="topics_to_cover">Topics to cover</string>
+    <string name="duration">Duration</string>
+    <string name="minutes">minutes</string>
+    <string name="time">Time</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="completed">Completed</string>
+
+    <!-- Subjects -->
+    <string name="no_subjects_added">No Subjects Added</string>
+    <string name="add_first_subject">Add your first subject to start tracking your study time</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="color">Color</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="priority">Priority</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="very_hard">Very Hard</string>
+
+    <!-- Notifications -->
+    <string name="study_reminder">Study Reminder</string>
+    <string name="time_to_study">Time to study %s</string>
+    <string name="break_time">Break Time</string>
+    <string name="break_reminder_message">You\'ve been studying for %d minutes. Time for a break!</string>
+
+    <!-- Profile -->
+    <string name="study_goals">Study Goals</string>
+    <string name="daily_study_goal">Daily Study Goal</string>
+    <string name="weekly_study_goal">Weekly Study Goal</string>
+    <string name="preferred_study_time">Preferred Study Time</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="focus_mode_settings">Focus Mode</string>
+    <string name="study_reminders">Study Reminders</string>
+    <string name="data_privacy">Data &amp; Privacy</string>
+    <string name="premium_features">Premium Features</string>
+    <string name="upgrade_to_premium">Upgrade to Premium</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="build">Build</string>
+    <string name="developer">Developer</string>
+    <string name="contact">Contact</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading...</string>
+    <string name="retry">Retry</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+</resources>
